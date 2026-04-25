@@ -11,21 +11,21 @@
 
     <!-- HEADER -->
     <header>
-        <div class="container">
-            <h1>Recicla+ Cidade</h1>
+        <h1 id="titulo-principal">Recicla+ Cidade</h1>
+        <div class="container-header">
+            
             <nav>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
+                <ul id="itens-menu">
+                    <li><a href="#inicio";>Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#locais">Locais de Coleta</a></li>
-                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- HERO / INÍCIO -->
-    <section id="inicio" class="hero">
+    <!-- coleta / INÍCIO -->
+    <section id="inicio" class="coleta">
         <div class="container">
             <h2>Encontre pontos de coleta perto de você</h2>
             <p>Ajude o meio ambiente descartando corretamente seus recicláveis.</p>
@@ -40,63 +40,117 @@
                 Este site ajuda a localizar pontos de coleta de materiais recicláveis,
                 incentivando práticas sustentáveis e a preservação do meio ambiente.
             </p>
+
+            <p>O descarte correto de lixo é uma ação importante tanto para preservar a cidade, evitando poluição por resíduos e visual, quanto para a saúde e segurança das pessoas, evitando enchentes e alagamentos causados por acúmulo de lixo em bueiros</p>
+            <br>
+            <p>Não descarte no lixo doméstico materiais perigosos, recicláveis (que devem ir para coleta seletiva) ou orgânicos compostáveis. Itens como pilhas, baterias, lâmpadas fluorescentes, medicamentos, eletrônicos, vidros quebrados e óleos devem ser levados a pontos de coleta específicos para evitar contaminação do solo e acidentes.</p>
+            <br><br>
+            <p>Aqui estão alguns exemplos de lugares corretos para o seu lixo ser reciclado da forma correta:</p>
+            <div class="container-flex">
+                <img src="imgs/img1.webp" alt="img" height="300px">
+                <img src="imgs/img2.jpg" alt="img" height="300px">
+                <img src="imgs/img3.webp" alt="img" height="300px">
+            </div>
         </div>
     </section>
 
     <!-- LOCAIS -->
     <section id="locais">
         <div class="container">
+            <p>Aqui estão alguns pontos de coleta para reciclagem mais próximos</p>
             <h2>Pontos de Coleta</h2>
 
             <!-- LISTA DE LOCAIS -->
             <div class="lista-locais">
 
                 <div class="local">
-                    <h3>Eco Ponto Centro</h3>
-                    <p>Rua Exemplo, 123 - Centro</p>
+                    <h3>Eco Ponto Unaerp</h3>
+                    <p>Faculdade Unaerp - Av Dom Pedro I - Enseada | coordenadas. -23.97659379061932, -46.221900785597185</p>
                 </div>
 
                 <div class="local">
-                    <h3>Reciclagem Bairro Sul</h3>
-                    <p>Av. Sustentável, 456 - Bairro Sul</p>
+                    <h3>Ecoponto Hotel Casagrande</h3>
+                    <p>Avenida Miguel Estéfno, 900 – Praia da Enseada</p>
                 </div>
-
-            </div>
-
-            <!-- MAPA -->
-            <div class="mapa">
-                <iframe 
-                    src="https://www.google.com/maps?q=Guarujá+SP&output=embed"
-                    width="100%" 
-                    height="400" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-            </div>
-
+                <div class="local">
+                    <h3>Eco Hotel Enseada Beiramar</h3>
+                    <p>Avenida Miguel Estéfno, 4.710 – Praia da Enseada</p>
+                </div>   
+                <div class="local">
+                    <h3>Praça Prefeito Abílio dos Santos Branco</h3>
+                    <p>Av. Venezuela x Av. Miguel Estefano. </p>
+                </div>         
+            </div>       
         </div>
     </section>
 
-    <!-- CONTATO -->
-    <section id="contato">
-        <div class="container">
-            <h2>Contato</h2>
-            <form>
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu email" required>
-                <textarea placeholder="Sua mensagem"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+    <section id="instrucoes">
+        <div id="inst">
+            <h2>Como descartar cada tipo de lixo?</h2>
+            <h3>Papel e papelão</h3>
+            <h4>Exemplos: folhas, jornais, caixas</h4>
+            <p>
+                Devem estar limpos e secos; dobre caixas para economizar espaço.
+                Evite papel engordurado, papel higiênico e guardanapos usados.
+                Destino: coleta seletiva.
+            </p>
+            <h3>Plástico</h3>
+            <h4>Exemplos: garrafas PET, embalagens, sacolas</h4>
+            <p>
+                Lavar rapidamente para retirar resíduos e, se possível, amassar.
+                Evite materiais muito sujos.
+                Destino: coleta seletiva.
+            </p>
+            <h3>Vidro</h3>
+            <h4>Exemplos: garrafas, potes</h4>
+            <p>
+                Lavar, se estiver quebrado, embalar em papel ou caixa para evitar acidentes.
+                Destino: coleta seletiva ou ecopontos.
+            </p>
+            <h3>Metal</h3>
+            <h4>Exemplos: latas de alumínio e aço</h4>
+            <p>
+                Limpar, pode amassar.
+                Destino: coleta seletiva.
+            </p>
+            <h3>Lixo orgânico</h3>
+            <h4>Exemplos: restos de comida, cascas</h4>
+            <p>
+                Em sacos bem fechados.
+                Melhor opção: compostagem.
+                Destino: lixo comum ou compostagem.
+            </p>
+            <h3>Lixo eletrônico</h3>
+            <h4>Exemplos: celulares, computadores, carregadores</h4>
+            <p>
+                Levar a pontos de coleta específicos.
+                Nunca jogar no lixo comum.
+            </p>
+            <h3>Medicamentos</h3>
+            <h4>Exemplos: remédios vencidos</h4>
+            <p>
+                Devolver em farmácias que recebem esse tipo de material.
+                Nunca jogar no lixo comum ou no vaso sanitário.
+            </p>
+            <h3>Pilhas e baterias</h3>
+            <p>
+                Levar a pontos de coleta em mercados ou lojas.
+                São altamente poluentes e não devem ir para o lixo comum.
+            </p>
+            <h3>Lixo não reciclável</h3>
+            <h4>Exemplos: papel higiênico, fraldas, absorventes</h4>
+            <p>Destino: lixo comum.</p>
         </div>
     </section>
+
 
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Recicla+ Cidade. Todos os direitos reservados.</p>
+            <p>Kevin Soares da Silva | Cruzeiro do Sul virtual</p>
         </div>
     </footer>
+    <script src="index.js"></script>
 
 </body>
 </html>

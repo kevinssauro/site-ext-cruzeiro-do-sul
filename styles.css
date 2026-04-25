@@ -9,12 +9,43 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    height: min-content;
+}
+
+#titulo-principal{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.container-flex{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.container-flex{
+    max-width: 100%;
+    height: auto;
+}
+
+.container-header {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .container {
     width: 90%;
     max-width: 1100px;
     margin: auto;
+}
+
+.container-header a {
+    color: white;
+    text-decoration: none;
 }
 
 /* HEADER */
@@ -30,8 +61,7 @@ header ul {
     justify-content: space-around;
 }
 
-/* HERO */
-.hero {
+.coleta {
     background: #4caf50;
     color: white;
     padding: 60px 0;
@@ -57,21 +87,10 @@ section {
     border-radius: 8px;
 }
 
-/* MAPA */
-.mapa {
-    margin-top: 20px;
-}
-
-/* FORM */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea, button {
-    padding: 10px;
-    font-size: 16px;
+#inst{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
 /* FOOTER */
